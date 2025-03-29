@@ -34,11 +34,13 @@ import userRoute from "./src/routes/user.route.js"
 import eventRoute from "./src/routes/event.route.js"
 import registrationRoute from "./src/routes/registration.route.js"
 import feedbackRoute from "./src/routes/feedback.route.js"
+import reminderRoute from "./src/routes/reminder.route.js"
 
 app.use("/api/v1/user",userRoute);
 app.use("/api/v1/events",eventRoute);
 app.use("/api/v1/registration",registrationRoute);
 app.use("/api/v1/feedback",feedbackRoute);
+app.use("/api/v1/reminder",reminderRoute);
 
 app.use("/",(req,res) =>{
   res.send("clg event management !!");

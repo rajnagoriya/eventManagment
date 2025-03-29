@@ -32,7 +32,6 @@ router.get(
 
 router.get(
   '/',
-  requireAuth,
   asyncHandler(getAllEvents)
 );
 
